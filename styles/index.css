@@ -1,0 +1,60 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.main{
+    background-color: #ffdab9;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    gap:10px;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-size: cover;
+}
+
+.login_div,.register_div,.loggedin_div{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username,.password,.email{
+    outline: none;
+    border: solid rgb(255, 131, 131) 2px;
+    border-radius: 25px; 
+    padding: 10px;
+    margin: 10px;
+}
+
+.login_btn,.register_btn,.logout_btn{
+    border-radius: 25px; 
+    padding: 10px;
+    margin: 10px;
+    cursor:pointer;
+    background-color: #ffdab9;
+    color: rgb(83, 83, 83);
+    border-color: #FF8383;  
+    /*box-shadow: 0px 0px;*/
+}
+
+.reglink,.loginback{
+    display: inline-block;
+    padding: 15px;  
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    color:rgba(97, 54, 6, 0.788);
+    font-size: xx-large;
+    transition: all 0.3s ease;
+}
+
+.reglink:hover,.loginback:hover{
+    color: rgba(194, 110, 13, 0.788); 
+}
+

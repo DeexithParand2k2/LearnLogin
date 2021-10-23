@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoffeeTime</title>
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <script rel="script"  type="text/javascript" src="script/index.js" ></script>
+    </head>
+    <body class="main" onload="start()">
+        <div></div><div></div><div></div><div></div>
+
+        <div class="login_div" id="login_div">
+            <form class="login">
+                <input type="text" class="email" id="email_field" placeholder="email..." autocomplete="off"><br>
+                <input type="password" class="password" id="password_field" placeholder="password..." autocomplete="off"><br>
+                <input type="button" class="login_btn" value="Login"><br>
+                <a href="#" class="reglink" onclick="gotoregister()">I'm New Here</a>
+            </form>
+        </div>
+
+        <div class="register_div" id="register_div">
+            <form class="register" id="register">
+                <input type="text" class="username" id="username_field" placeholder="username..." autocomplete="off"><br>
+                <input type="text" class="email" id="email_field" placeholder="email..." autocomplete="off"><br>
+                <input type="password" class="password" id="password_field" placeholder="password..." autocomplete="off"><br>
+                <input type="button" class="register_btn" value="Register" onclick="clicktoregister()"><br>
+                <a href="#" class="loginback" onclick="gotologin()">Already In</a>
+            </form>
+        </div>
+
+        <div></div>
+        
+        <div class="loggedin_div" id="loggedin_div">
+            <p>Welcome Username...</p>
+            <input type="button" class="logout_btn" value="Logout">
+        </div>
+    </body>
+</html>
